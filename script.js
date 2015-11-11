@@ -94,13 +94,13 @@ var roll_all = function() {
         array_dice[i].innerHTML = random_number + '<br /> Not yet picked';
         array_dice[i].addEventListener('click', function () {
             console.log(this);
-            this.style.top = '80px';
+            this.style.top = '160px';
             this.innerHTML = this.value + '<br />' + 'picked';
             this.style.backgroundColor = 'lime';
         });
         array_dice[i].addEventListener('touchstart', function () {
             console.log(this);
-            this.style.top = '80px';
+            this.style.top = '160px';
             this.innerHTML = this.value + '<br />' + 'picked';
             this.style.backgroundColor = 'lime';
         });

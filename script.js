@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded',function(){
          document.body.appendChild(btn);
          btn.innerHTML = 'roll all';
          btn.addEventListener('touchstart', function () {
-             roll_all();
+           //  roll_all();
          });
          btn.addEventListener('click', function () {
              roll_all();
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded',function(){
          document.body.appendChild(btn2);
          btn2.innerHTML = 'roll rest';
          btn2.addEventListener('touchstart', function () {
-             roll_rest();
+            // roll_rest();
          });
          btn2.addEventListener('click', function () {
              roll_rest();
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded',function(){
          document.body.appendChild(btn3);
          btn3.innerHTML = 'finish turn';
          btn3.addEventListener('touchstart', function () {
-             finish_turn();
+            // finish_turn();
          });
          btn3.addEventListener('click', function () {
              finish_turn();
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded',function(){
          document.body.appendChild(btn4);
          btn4.innerHTML = 'add points';
          btn4.addEventListener('touchstart', function () {
-             add_points();
+             //add_points();
          });
          btn4.addEventListener('click', function () {
              add_points();
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded',function(){
          document.body.appendChild(btn5);
          btn5.innerHTML = 'lose points';
          btn5.addEventListener('touchstart', function () {
-             lose_points();
+             //lose_points();
          });
          btn5.addEventListener('click', function () {
              lose_points();
@@ -167,11 +167,4 @@ var lose_points = function(){
         div1.innerHTML += obj_players["player"+i].name + ' = ' + obj_players["player"+i].points + '<br />'
     }
     div1.innerHTML += 'Turn = ' + obj_players['player'+turn].name;
-
 };
-
-
-
-
-
-

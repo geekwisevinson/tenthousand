@@ -1,6 +1,6 @@
 
 document.addEventListener('DOMContentLoaded',function(){
-    setup();
+
  setup = function() {
      players = prompt('How many players');
 
@@ -77,7 +77,8 @@ document.addEventListener('DOMContentLoaded',function(){
          div1.innerHTML += 'Turn = ' + obj_players['player' + turn].name;
      }
 
-    }
+    };
+    setup();
 });
 
 

@@ -133,13 +133,19 @@ var finish_turn= function(){
 
 var add_points = function(){
     var temp =  parseInt(prompt('add points'));
-    points_this_turn += temp;
-    obj_players['player'+turn].points += temp;
-    div1.innerHTML = '';
-    for (var i = 0; i<players; i++) {
-        div1.innerHTML += obj_players["player"+i].name + ' = ' + obj_players["player"+i].points + '<br />'
+    if (isNaN(temp)){
+        alert('enter a number');
+        add_points();
+    }else{
+        points_this_turn += temp;
+        obj_players['player'+turn].points += temp;
+        div1.innerHTML = '';
+        for (var i = 0; i<players; i++) {
+            div1.innerHTML += obj_players["player"+i].name + ' = ' + obj_players["player"+i].points + '<br />'
+        }
+        div1.innerHTML += 'Turn = ' + obj_players['player'+turn].name;
     }
-    div1.innerHTML += 'Turn = ' + obj_players['player'+turn].name;
+
 
 };
 

@@ -5,14 +5,18 @@ document.addEventListener('DOMContentLoaded',function(){
     array_dice = {};
 
     for (var i=0;i<dice;i++){
-        var d = document.createElement('img');
+        var d = document.createElement('div');
         array_dice[i] = d;
         document.body.appendChild(d);
         var random_number = Math.floor(Math.random()*6) +1;
-        array_dice[i].src = 'images/die' + random_number +'.jpg';
+        array_dice[i].style.width = '100px';
+        array_dice[i].style.border = '1px black solid';
+        array_dice[i].style.display = 'inline-block';
+        array_dice[i].style.height = '100px';
+        array_dice[i].innerHTML = random_number + '';
         array_dice[i].addEventListener('touchstart',function(){
             var random_number = Math.floor(Math.random()*6) +1;
-            this.src = 'images/die' + random_number +'.jpg';
+            this.innerHTML = random_number + '';
         })
     }
 });

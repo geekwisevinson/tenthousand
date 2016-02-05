@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded',function(){
  setup = function() {
      players = prompt('How many players');
 
+
      if (isNaN(players)) {
          alert('enter a number');
          setup();
